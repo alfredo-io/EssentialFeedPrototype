@@ -12,6 +12,7 @@
 		3821DE3024EC2D4600284BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3821DE2E24EC2D4600284BC4 /* Main.storyboard */; };
 		3821DE3224EC2D4800284BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3821DE3124EC2D4800284BC4 /* Assets.xcassets */; };
 		3821DE3524EC2D4800284BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3821DE3324EC2D4800284BC4 /* LaunchScreen.storyboard */; };
+		3821DE3D24EC372700284BC4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821DE3C24EC372700284BC4 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3821DE3124EC2D4800284BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3821DE3424EC2D4800284BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3821DE3624EC2D4800284BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3821DE3C24EC372700284BC4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		3821DE2724EC2D4600284BC4 /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				3821DE3624EC2D4800284BC4 /* Info.plist */,
 				3821DE2824EC2D4600284BC4 /* AppDelegate.swift */,
+				3821DE3C24EC372700284BC4 /* FeedViewController.swift */,
 				3821DE2A24EC2D4600284BC4 /* SceneDelegate.swift */,
-				3821DE2E24EC2D4600284BC4 /* Main.storyboard */,
 				3821DE3124EC2D4800284BC4 /* Assets.xcassets */,
 				3821DE3324EC2D4800284BC4 /* LaunchScreen.storyboard */,
-				3821DE3624EC2D4800284BC4 /* Info.plist */,
+				3821DE2E24EC2D4600284BC4 /* Main.storyboard */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3821DE2924EC2D4600284BC4 /* AppDelegate.swift in Sources */,
+				3821DE3D24EC372700284BC4 /* FeedViewController.swift in Sources */,
 				3821DE2B24EC2D4600284BC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
