@@ -11,10 +11,23 @@ struct FeedImageViewModel {
 }
 
 class FeedViewController: UITableViewController {
-    private let feed = FeedImageViewModel.prototypeFeed
+    private var feed = [FeedImageViewModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refresh()
+    }
+    
+    @IBAction private func refresh() {
+        self.refreshControl?.beginRefreshing()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+            if self?.feed.isEmpty ?? false {
+                self?.feed = FeedImageViewModel.prototypeFeed
+                self?.tableView.reloadData()
+            }
+            self?.refreshControl?.endRefreshing()
+        }
     }
 
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
